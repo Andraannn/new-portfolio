@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andran</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#portfolio">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <i class="material-icons" id="close-icon" onclick="closemenu()">clear
+            </i>
+          </ul>
+          <i class="material-icons" id="menu-icon" onclick="openmenu()">dehaze</i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm Andrei Gabrielle A. Adlawan</h1>
+          <p>I am a <span id="typewriter" class="role_effect"></span></p>
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
+    <!-- ABOUT PAGE -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/pic.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="sub-content">
+              I am a BS - IT graduate (Cum Laude) at Mindanao State University -
+              Iligan Institute of Technology, made the Chancellor's List in the
+              S.Y. 2020- 2021 and made three of the Dean's List for 2
+              consecutive years from the S.Y. 2021-2022 until S.Y. 2023. I am
+              also an intern at FABLAB Mindanao for 5 years.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Art</span><br />Designing Logos and Banners, used to
+                  draw cartoon/anime characters
+                </li>
+                <li>
+                  <span>Photo and Video Editing</span><br />Using Photoshop and
+                  Vegas PRO
+                </li>
+                <li>
+                  <span>Web Development</span><br />Web App Development using
+                  HTML and CSS
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>AUGUST 1, 2024 – DECEMBER 31, 2024</span><br />Iligan
+                  City<br />Computer Programmer II at Mindanao State University - Iligan Institute of Technology
+                </li>
+                <li>
+                  <span>FEBRUARY 1, 2024 – JULY 31, 2024</span><br />Iligan
+                  City<br />Research Assistant at Mindanao State University - Iligan Institute of Technology
+                </li>
+                <li>
+                  <span>FEBRUARY 21, 2023 – FEBRUARY 23, 2023</span><br />Iligan
+                  City<br />Attended LAF - MSU-IIT Pre-Internship Capability
+                  Training
+                </li>
+                <li>
+                  <span>APRIL 17, 2019 – MAY 28, 2019</span><br />Iligan City<br />
+                  Received Certificate of Completion for completing the Massive
+                  Open Online Course (MOOC) Camp program of the United States
+                  Department of State
+                </li>
+                <li>
+                  <span>MAY 5, 2019 – MAY 12, 2019</span><br />Seoul Innovation
+                  Park, South Korea<br />Invited and Attended ‘FABLAB ASIA
+                  NETWORK 5’ at Seoul Innovation Center
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019-2023</span><br />Mindanao State University - Iligan
+                  Institute of Technology<br />
+                  Bachelor of Science in Information Technology (Major in
+                  Database)
+                </li>
+                <li>
+                  <span>2013-2019</span><br />La Salle Academy Iligan City<br />
+                  STEM Academic Track
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+      <div class="container-design">
+        <h1 class="sub-title">Sample Designs</h1><br>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work_1.png" />
+          </div>
+          <div class="work">
+            <img src="images/work_2.jpg" />
+          </div>
+          <div class="work">
+            <img src="images/work_3.jpg" />
+          </div>
+          <div class="work">
+            <img src="images/work_4.png" />
+          </div>
+        </div>
+          <a href="https://drive.google.com/drive/folders/1WZBu-kR88Ln5qyET6ogI_HTqyn9dB6ZB?usp=sharing" target="_blank" class="see-more">See More</a>
+      </div>
+    </div>
+    <!-- <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Web Applications</h1><br>
+        <div class="work-list">
+            <div class="work">
+            <a href="#"><img src="" /></a>
+            </div>
+            <div class="work">
+            <a href="#"><img src="" /></a>
+            </div>
+            <div class="work">
+            <a href="#"><img src="" /></a>
+            </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><span><i class="fa fa-envelope"></i></span></i>adlawan.andreigabrielle@gmail.com</p>
+            <p><span><i class="fa fa-phone"></i></span></i>(+63) 919 007 9151</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/anduweeyyy/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/iamboksss/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://github.com/Andraannn"
+              ><i class="fab fa-github"></i
+            ></a>
+            </div>
+            <!-- <a href="images/Adlawan_Resume.pdf" download class="download-button">Download Resume</a> -->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input 
+                type="text" 
+                name="Name" 
+                placeholder="Your Name" 
+                required 
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">SUBMIT</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Andran 2025</p>
+    </div>
+    <script>
+      // JavaScript to implement the typewriter effect
+      const textArray = ["Graphic Designer", "Web Developer", "Video Editor"];
+      let index = 0;
+      let currentText = "";
+      let letterIndex = 0;
+    
+      function type() {
+        if (letterIndex < textArray[index].length) {
+          currentText += textArray[index].charAt(letterIndex);
+          document.getElementById("typewriter").innerHTML = currentText;
+          letterIndex++;
+          setTimeout(type, 100); // Adjust typing speed (milliseconds)
+        } else {
+          setTimeout(erase, 1200); // Wait before erasing
+        }
+      }
+    
+      function erase() {
+        if (letterIndex >= 0) {
+          currentText = textArray[index].substring(0, letterIndex);
+          document.getElementById("typewriter").innerHTML = currentText;
+          letterIndex--;
+          setTimeout(erase, 50); // Adjust erasing speed (milliseconds)
+        } else {
+          index = (index + 1) % textArray.length;
+          setTimeout(type, 500); // Wait before typing the next text
+        }
+      }
+    
+      // Start the typing effect
+      type();
+    </script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    crossorigin="anonymous">
+    </script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        // Remove the active class from all tab links and tab contents.
+        for (const tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (const tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        // Add the active class to the current tab link and tab content.
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+        // Hide all tab contents except for the active one.
+        for (const tabcontent of tabcontents) {
+          if (tabcontent.id !== tabname) {
+            tabcontent.style.display = "none";
+          } else {
+            tabcontent.style.display = "block";
+          }
+        }
+      }
+    </script>
+    <script>
+      const menuIcon = document.querySelector("#menu-icon");
+      const closeIcon = document.querySelector("#close-icon");
+      const sideMenu = document.querySelector("#sidemenu");
+
+      function openmenu() {
+        sideMenu.classList.add("open"); // Add the open class
+      }
+
+      function closemenu() {
+        sideMenu.classList.remove("open"); // Remove the open class
+      }
+
+      menuIcon.addEventListener("click", openmenu);
+      closeIcon.addEventListener("click", closemenu);
+    </script>
+    <script>
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyt09FIvSGI2RFDAuXy-uTrB8BSYWH6Uy-vZBwUM4MdzMKqDlTH_9cdYC9KsEj8Vm9X/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Your form was sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+  </body>
+</html>
